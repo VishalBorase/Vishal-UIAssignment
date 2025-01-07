@@ -23,6 +23,15 @@ public class RewardPoint {
     private int month;
     
     private int year;
+    
+	public RewardPoint(Long id, Customer customer, int points, int month, int year) {
+		super();
+		this.id = id;
+		this.customer = customer;
+		this.points = points;
+		this.month = month;
+		this.year = year;
+	}
 
 	public Long getId() {
 		return id;

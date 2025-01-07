@@ -11,7 +11,6 @@ import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
 import org.springframework.context.annotation.Description;
-
 import com.example.rewardsystem.entity.Customer;
 import com.example.rewardsystem.entity.RewardPoint;
 import com.example.rewardsystem.repository.RewardPointRepository;

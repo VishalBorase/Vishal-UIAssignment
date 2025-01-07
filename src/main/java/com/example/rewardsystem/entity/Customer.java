@@ -26,6 +26,21 @@ public class Customer {
 
     @OneToMany(mappedBy = "customer")
     private List<RewardPoint> rewardPoints;
+    
+    
+	public Customer() {
+	}
+
+	public Customer(Long id, String name, String email, String password, List<CustomerTransaction> transactions,
+			List<RewardPoint> rewardPoints) {
+		super();
+		this.id = id;
+		this.name = name;
+		this.email = email;
+		this.password = password;
+		this.transactions = transactions;
+		this.rewardPoints = rewardPoints;
+	}
 
 	public Long getId() {
 		return id;
