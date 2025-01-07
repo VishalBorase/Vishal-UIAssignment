@@ -1,23 +1,23 @@
-##High-Level Design Document for the Reward Point System
+## High-Level Design Document for the Reward Point System
 
-##Project Name: Reward Point System
+## Project Name: Reward Point System
 
 Overview: The Reward Point System is designed to manage and calculate reward points for customers based on their purchases. The system computes reward points based on defined rules and allows users to retrieve reward point reports. It also enables querying of historical and accumulated points over time.
 
 
-##System Components :
+## System Components :
 
-###User Interface (UI): 
+### User Interface (UI): 
    Allows customers to interact with the system, view their reward points, and see their transaction history.
 
-###API Layer (Controller):
+### API Layer (Controller):
 
 *Exposes RESTful endpoints for client interaction.
 *RewardPointController handles incoming HTTP requests:
    GET /api/rewardPoints/customer: Retrieve reward points for a customer based on the year and   month.
    GET /api/rewardPoints/customer/all: Retrieve all reward points for a specific customer.
    
-###Business Logic Layer (Service):
+### Business Logic Layer (Service):
 
 *RewardPointService handles the logic for calculating reward points and fetching reward point reports.
 calculateRewardPoints: Calculates points based on the purchase amount.
@@ -28,7 +28,7 @@ Data Layer (Repository):
 *RewardPointRepository is responsible for interacting with the database to store and retrieve reward points data.
 
 
-###Key Features:
+### Key Features:
 
 *Reward Point Calculation:
 
@@ -47,7 +47,7 @@ Historical points data is also available.
 Customers can view their accumulated reward points for all time periods, with the ability to query by month and year.
 
 
-###Technologies Used:
+### Technologies Used:
 
 *Backend:
 
