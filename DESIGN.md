@@ -23,7 +23,8 @@ Overview: The Reward Point System is designed to manage and calculate reward poi
 calculateRewardPoints: Calculates points based on the purchase amount.
 getRewardPointReport: Retrieves reward points based on customer ID, year, and month.
 getAllRewardPointsForCustomer: Retrieves all reward points for a customer.
-Data Layer (Repository):
+
+### Data Layer (Repository):
 
 *RewardPointRepository is responsible for interacting with the database to store and retrieve reward points data.
 
