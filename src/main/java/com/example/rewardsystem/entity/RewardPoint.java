@@ -9,21 +9,24 @@ import jakarta.persistence.ManyToOne;
 
 @Entity
 public class RewardPoint {
-	
+
 	@Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private Long id;
 
-    @ManyToOne
-    @JoinColumn(name = "customer_id", referencedColumnName = "id")
-    private Customer customer;
+	@ManyToOne
+	@JoinColumn(name = "customer_id", referencedColumnName = "id")
+	private Customer customer;
 
-    private int points;
-    
-    private int month;
-    
-    private int year;
-    
+	private int points;
+
+	private int month;
+
+	private int year;
+	
+	public RewardPoint() {
+	}
+
 	public RewardPoint(Long id, Customer customer, int points, int month, int year) {
 		super();
 		this.id = id;

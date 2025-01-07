@@ -85,8 +85,10 @@ public class RewardPointControllerTest {
 		Long customerId = 1L;
 
 		List<RewardPoint> mockRewardPointsList = new ArrayList<>();
-		mockRewardPointsList.add(new RewardPoint(2L, new Customer(customerId,"","","",new ArrayList<>(),new ArrayList<>()), 100, 1, 2025));
-		mockRewardPointsList.add(new RewardPoint(3L, new Customer(customerId,"","","",new ArrayList<>(),new ArrayList<>()), 150, 2, 2025));
+		mockRewardPointsList.add(new RewardPoint(2L,
+				new Customer(customerId, "", "", "", new ArrayList<>(), new ArrayList<>()), 100, 1, 2025));
+		mockRewardPointsList.add(new RewardPoint(3L,
+				new Customer(customerId, "", "", "", new ArrayList<>(), new ArrayList<>()), 150, 2, 2025));
 
 		when(rewardPointsService.getAllRewardPointsForCustomer(customerId)).thenReturn(mockRewardPointsList);
 

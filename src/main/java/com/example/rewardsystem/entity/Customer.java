@@ -10,24 +10,23 @@ import jakarta.persistence.OneToMany;
 
 @Entity
 public class Customer {
-	
+
 	@Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
-    
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private Long id;
+
 	private String name;
-    
-    private String email;
-    
-    private String password;
 
-    @OneToMany(mappedBy = "customer")
-    private List<CustomerTransaction> transactions;
+	private String email;
 
-    @OneToMany(mappedBy = "customer")
-    private List<RewardPoint> rewardPoints;
-    
-    
+	private String password;
+
+	@OneToMany(mappedBy = "customer")
+	private List<CustomerTransaction> transactions;
+
+	@OneToMany(mappedBy = "customer")
+	private List<RewardPoint> rewardPoints;
+
 	public Customer() {
 	}
 
@@ -89,7 +88,5 @@ public class Customer {
 	public void setRewardPoints(List<RewardPoint> rewardPoints) {
 		this.rewardPoints = rewardPoints;
 	}
-    
-    
-    
+
 }
